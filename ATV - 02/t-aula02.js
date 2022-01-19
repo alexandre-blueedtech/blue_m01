@@ -83,8 +83,10 @@ console.log(`Ótimo ${cliente}! ${escolha} é uma ótima escolha!`);
 
 */
 
+console.clear();
 
 var monstro = +prompt(`Escolha a vida do monstro de 10 a 50: `);
+console.log();
 
 while(monstro < 10 || monstro > 50) {
     console.log();

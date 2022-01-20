@@ -2,7 +2,9 @@ console.clear();
 console.log();
 const prompt = require('prompt-sync')();
 
- // ---------------------------------------- //
+// 4) Faça um programa que leia 2 valores inteiros (A e B).
+//  Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou 
+//  "Nao sao Multiplos", indicando se os valores lidos são múltiplos entre si.
 
  let num1 = +prompt('Digite um número: ');
  let num2 = +prompt('Digite outro número: ')

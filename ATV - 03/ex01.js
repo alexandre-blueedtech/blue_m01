@@ -10,6 +10,8 @@ const prompt = require('prompt-sync')();
 
 if(num1 > num2){
     console.log(`O número ${num1} é maior!`);
-} else {
+} else if(num2 > num1){
     console.log(`O número ${num2} é maior!`);
+} else {
+    console.log("Os números são iguais!");
 }

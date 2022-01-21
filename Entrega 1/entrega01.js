@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 
 //------------------------//
 
-var nome = prompt("Digite seu nome! ");
+var nome = prompt("Antes de começarmos, digite seu nome! ");
 
 
 do {

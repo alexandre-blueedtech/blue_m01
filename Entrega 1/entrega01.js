@@ -22,8 +22,9 @@ console.log(`O ano é 2202 e uma super bactéria transformou todos em zumbis, pa
 que conhecer um pouco do que você sabe fazer! Será que você sobreviveria?`)
 console.log();
 console.log('Nesse jogo testaremos todas os suas habilidades! Digite "sim" para começar: ')
+
  do{
-     
+
     console.log();
     var inicio = prompt('');
     console.log();

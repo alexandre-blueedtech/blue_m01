@@ -18,34 +18,54 @@ const prompt = require('prompt-sync')();
  let num1 = +prompt('Digite um número: ')
  let num2 = +prompt('Digite outro número: ')
  let num3 = +prompt('Digite outro número: ')
- var A
- var B
- var C
+ let A
+ let B
+ let C
 
  if(num1 > num2 && num1 > num3){
-     var A = num1
-     var B = num2
-     var C = num3
+      A = num1
+      B = num2
+      C = num3
  } else if(num2 > num1 && num2 > num3) {
-     var A = num2
-     var B = num1
-     var C = num3
+      A = num2
+      B = num1
+      C = num3
  } else {
-     var A = num3
-     var B = num1
-     var C = num2
+      A = num3
+      B = num1
+      C = num2
  }
 
- if(A >= (B + C)){
-    console.log("Não forma um triângulo!");
- } else if(A == (B + C)) {
-    console.log("Forma um triângulo retângulo!");
- } else if(A > (B + C)) {
-    console.log("Forma um triângulo obtusângulo!");
- } else if(A < (B + C)) {
-    console.log("Forma um triângulo acutângulo!");
- } else if(A == B && A == C) {
-    console.log("Forma um triângulo equilátero!");
- } else if(A == B || A == C || C == B ){
-    console.log("Forma um triângulo isosceles!")
+ console.log();
+ console.log("----- LADOS -----");
+ console.log(`A: ${A} / B: ${B} / C: ${C}`)
+ console.log("-----------------");
+ console.log();
+
+ if (A >= (B + C))
+ {
+     console.log("NAO FORMA TRIANGULO");
+ }
+ else
+ {
+     if ( (A*A) == (B*B) + (C*C) )
+     {
+         console.log("TRIANGULO RETANGULO");
+     }
+     if ( (A*A) > (B*B) + (C*C) )
+     {
+         console.log("TRIANGULO OBTUSANGULO");
+     }
+     if ( (A*A) < (B*B) + (C*C) )
+     {
+         console.log("TRIANGULO ACUTANGULO");
+     }
+     if (A == B && B == C)
+     {
+         console.log("TRIANGULO EQUILATERO");
+     }
+     if ( (A == B && A != C) || (B == C && B != A))
+     {
+         console.log("TRIANGULO ISOSCELES");
+     }
  }

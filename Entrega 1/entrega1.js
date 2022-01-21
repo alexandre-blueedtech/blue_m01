@@ -1,5 +1,4 @@
 console.clear();
-console.log();
 const prompt = require('prompt-sync')();
 
 //------------------------//
@@ -65,3 +64,4 @@ if(contador == 0){
 } else {
     console.log(`Você arrasaria num apocalipse! Seu resultado: ${contador}`);
 }
+

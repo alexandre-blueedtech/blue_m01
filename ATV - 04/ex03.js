@@ -23,20 +23,20 @@ do{
 
 
 
-var cont100 = Math.floor(saque/100);
-var cont50 = Math.floor((saque - (cont100*100))/50);
-var cont20 = Math.floor((saque - (cont100*100) - (cont50 * 50))/20);
-var cont10 = Math.floor((saque - (cont100*100) - (cont50 * 50) - (cont20 * 20))/10);
-var cont5 = Math.floor((saque - (cont100*100) - (cont50 * 50) - (cont20 * 20) - (cont10 * 10))/5);
-var cont1 = Math.floor((saque - (cont100*100) - (cont50 * 50) - (cont20 * 20) - (cont10 * 10) - (cont5 * 5) / 1));
+var cont100 = (saque/100);
+var cont50 = (saque%100)/50;
+var cont20 = ((saque%100)%50)/20;
+var cont10 = (((saque%100)%50)%20)/10;
+var cont5 = ((((saque%100)%50)%20)%10)/5;
+var cont1 = (((((saque%100)%50)%20)%10)%5)/1;
 
 
-console.log(`Notas de R$100: ${cont100}`);
-console.log(`Notas de R$50: ${cont50}`);
-console.log(`Notas de R$20: ${cont10}`);
-console.log(`Notas de R$10: ${cont10}`);
-console.log(`Notas de R$5: ${cont5}`);
-console.log(`Notas de R$1: ${cont1}`);
+console.log("Notas de R$100: " + Math.floor(cont100))
+console.log("Notas de R$50: " + Math.floor(cont50))
+console.log("Notas de R$20: " + Math.floor(cont20))
+console.log("Notas de R$10: " + Math.floor(cont10))
+console.log("Notas de R$5: " + Math.floor(cont5))
+console.log("Notas de R$1: " + Math.floor(cont1))
 console.log();
 console.log(`Saque de R$${saque}`);
 console.log();

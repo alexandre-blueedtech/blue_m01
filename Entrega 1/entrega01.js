@@ -11,9 +11,9 @@ do {
     console.clear();
     
 console.log();
-console.log('----------------');
+console.log('--------------------------');
 console.log('Simulador de Sobrevivência');
-console.log('----------------');
+console.log('--------------------------');
 console.log();
 
 console.log(`Bem-Vindo(a) ao simulador de sobrevivência ${nome}!`);
@@ -42,15 +42,13 @@ console.log('Nesse jogo testaremos todas os suas habilidades! Digite "sim" para 
 
  } while(inicio.toUpperCase() != "SIM");
         console.clear();
+
         console.log('------------------------------------------------------------');
         console.log('As regras são básicas! Responda sim ou não para as perguntas');
         console.log('------------------------------------------------------------');
-
+        console.log('')
+        
     let contador = 0;
-
-        console.log();
-        console.log('Primeira pergunta!');
-        console.log()
 
         let perg1 = prompt(`Você sabe nadar? `);
         if(perg1.toUpperCase() == "SIM"){

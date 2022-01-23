@@ -9,7 +9,7 @@ const prompt = require('prompt-sync')();
 // Salário: maior que zero;
 // Estado Civil: 's', 'c', 'v', 'd';
 
-/*
+
 console.log('Qual seu nome?');
 let nome = prompt('');
 
@@ -37,8 +37,6 @@ while(salario < 0){
     console.log('Seu salário deve ser maior que 0! Tente novamente:');
     salario = prompt('');
 }
-
-*/
 
 console.log();
 

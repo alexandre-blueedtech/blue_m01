@@ -81,7 +81,7 @@ console.log('Nesse jogo testaremos todas os suas habilidades! Digite "sim" para 
         console.log("-------------------------------------------------------------------");
     if(contador == 0){
         console.log(`Você não sobreviveria num apocalispse! Seu resultado: ${contador}`);
-    } else if(contador == 1 || contador == 2 ) {
+    } else if(contador <= 2 ) {
         console.log(`Você precisa de mais para sobreviver num apocalispse! Seu resultado: ${contador}`);
     } else if(contador == 3) {
         console.log(`Você conseguiria sobreviver num apocalipse! Mas por pouco... Seu resultado: ${contador}`);

@@ -8,7 +8,6 @@ do {
 let escolhaBot
 let escolhaUser
 let contador = 1
-let rodadas
 let pontBot = 0
 let pontUser = 0
 
@@ -22,16 +21,14 @@ pedra, papel e tesoura!`)
 
 console.log();
 
+console.log(`Quantas rodadas você deseja jogar? `);
 
-rodadas = +prompt(`Quantas rodadas você deseja jogar? `);
 
-
-do{
+for (var rodadas = +prompt(''); rodadas >= contador; contador++ ) {
 
     console.log(`${contador}ª rodada! `);
 
     do{
-    
     
     escolhaBot = Math.floor(Math.random() * 3);
     escolhaUser = prompt('') 
@@ -47,6 +44,7 @@ if(escolhaUser == 'pedra'){
 
 } else {
     escolhaUser = 3
+    console.clear()
     console.log('Comando não reconhecido, tente novamente: ')
     }
 
@@ -58,20 +56,15 @@ if(escolhaUser == 0){
 
     if(escolhaBot == 0){
         console.log(`${contador}ª rodada: Empate!`);
-        contador++
-        pontBot++
-        pontUser++
         console.log('');
 
     } else if(escolhaBot == 1){
         console.log(`${contador}ª rodada: Derrota!`);
-        contador++
         pontBot++
         console.log('');
         
     } else {
         console.log(`${contador}ª rodada: Vitória!`);
-        contador++
         pontUser++
         console.log('');
     }
@@ -79,21 +72,16 @@ if(escolhaUser == 0){
 } else if(escolhaUser == 1){
 
     if(escolhaBot == 1){
-        console.log(`${contador}ª rodada: Empate!`);
-        contador++
-        pontBot++
-        pontUser++
+        console.log(`${contador}ª rodada: Empate!`)
         console.log('');
 
     } else if(escolhaBot == 2){
         console.log(`${contador}ª rodada: Derrota!`);
-        contador++
         pontBot++
         console.log('');
         
     } else {
         console.log(`${contador}ª rodada: Vitória!`);
-        contador++
         pontUser++
         console.log('');
     }
@@ -101,27 +89,21 @@ if(escolhaUser == 0){
 
     if(escolhaBot == 2){
         console.log(`${contador}ª rodada: Empate!`);
-        contador++
-        pontBot++
-        pontUser++
         console.log('');
 
     } else if(escolhaBot == 0){
         console.log(`${contador}ª rodada: Derrota!`);
-        contador++
         pontBot++
         console.log('');
         
     } else {
         console.log(`${contador}ª rodada: Vitória!`);
-        contador++
         pontUser++
         console.log('');
     }
 }
 
-
-}while(contador <= rodadas)
+}
 
 console.clear()
 
